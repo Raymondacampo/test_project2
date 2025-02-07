@@ -1,5 +1,5 @@
 export async function getServerSideProps() {
-  const res = await fetch("http://127.0.0.1:8000/api/data/");
+  const res = await fetch("http://104.131.181.174:8000/api/data/");
   const data = await res.json();
   return { props: { data } };
 }
